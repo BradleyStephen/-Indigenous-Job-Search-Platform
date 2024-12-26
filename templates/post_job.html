@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Post Job{% endblock %}
+
+{% block content %}
+<h1>Post a New Job</h1>
+<form method="POST">
+    <div class="form-group">
+        <label for="title">Job Title:</label>
+        <input type="text" id="title" name="title" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="description">Job Description:</label>
+        <textarea id="description" name="description" rows="5" required></textarea>
+    </div>
+    
+    <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+    </div>
+    
+    <div class="form-group">
+        <label>
+            <input type="checkbox" name="benefits" value="true">
+            Include Standard Benefits Package
+        </label>
+    </div>
+    
+    <button type="submit">Post Job</button>
+</form>
+{% endblock %}

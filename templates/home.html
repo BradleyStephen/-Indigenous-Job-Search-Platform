@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Welcome to the Indigenous Job Platform</h1>
+<p>This platform connects Indigenous job seekers with meaningful employment opportunities across Canada.</p>
+<div>
+    <h2>Quick Links</h2>
+    <ul>
+        <li><a href="{{ url_for('post_job') }}">Post a New Job</a></li>
+        <li><a href="{{ url_for('search_jobs') }}">Search Available Jobs</a></li>
+    </ul>
+</div>
+{% endblock %}
